@@ -1,0 +1,11 @@
+ Laravel-spezifische Ignorierungen
+backend/vendor/
+backend/.env
+backend/storage/*.key
+
+ React-spezifische Ignorierungen
+frontend/node_modules/
+frontend/.env
+
+ misc
+.DS_Store

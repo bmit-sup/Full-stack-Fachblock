@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TodoItemController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Bestehende Route für Benutzerauthentifizierung
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+return $request->user();
 });
+
+// CRUD-Routen für TodoItem
+Route::get('/todo-items', [TodoItemController::class, 'index']);
+Route::get('/todo-items/{id}', [TodoItemController::class, 'show']);
+Route::post('/todo-items', [TodoItemController::class, 'store']);
+Route::put('/todo-items/{id}', [TodoItemController::class, 'update']);
+Route::delete('/todo-items/{id}', [TodoItemController::class, 'delete']);

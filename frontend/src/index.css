@@ -1,13 +1,56 @@
+/* Enhanced Style Settings for the Application */
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Dark background for a modern, sleek look */
+  color: #e0e0e0; /* Light text for high contrast and readability */
+  line-height: 1.6;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Navigation Styling */
+nav {
+  background: #333; /* Slightly lighter to distinguish nav from the body */
+  color: #e0e0e0;
+  padding: 15px 20px; /* Increased padding for a better touch area */
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Subtle shadow for depth */
+}
+
+nav a {
+  color: #cddc39; /* Brighter, more vibrant color for links */
+  margin: 0 15px; /* Increased margin for better separation */
+  text-decoration: none;
+  padding: 5px 10px; /* Padding for a button-like appearance */
+  border-radius: 5px; /* Rounded corners for a modern look */
+}
+
+nav a.active {
+  color: #ff5722; /* A warmer 'active' color for better visibility */
+  background-color: #424242; /* Dark background for the active link */
+}  
+
+nav a:hover {
+  color: #ffffff; /* White for hover to enhance feedback */
+  background-color: #616161; /* Lighter background on hover */
+}
+
+/* Heading Styling */
+h1 {
+  font-size: 2.5rem;
+  color: #ff5722; /* Consistent color usage for key elements */
+  text-align: center;
+  margin: 20px 0;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7); /* Subtle shadow for depth */
+}
+
+/* Link Styling */
+a {
+  color: #80deea; /* A lighter, more serene color for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #00bcd4; /* A slightly darker hue on hover for visual feedback */
 }
